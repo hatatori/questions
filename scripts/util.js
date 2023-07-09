@@ -16,7 +16,14 @@ function edit_page(t){
         inp_comment.value = e.comment
         btn_edit.classList.remove('hidden')
         btn_add.classList.add('hidden')
+
+        
+
     })
+}
+
+function renderHtml(t){
+    t.innerHTML = t.innerText
 }
 
 function edit_by_id(){
@@ -113,5 +120,6 @@ window.savedata = savedata
 window.deletedata = deletedata
 window.busca = busca
 window.changeselect = changeselect
+window.renderHtml = renderHtml
 
 export {edit_page, edit_by_id, savedata, busca, changeselect, select_2}
