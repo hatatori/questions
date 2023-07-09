@@ -101,6 +101,10 @@ class Questions{
 
             this.discipline_all_2 = objects
 
+            setTimeout(()=>{
+                renderHtmlAll()
+            },100)
+
             return list
 
         })

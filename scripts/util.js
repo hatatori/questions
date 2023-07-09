@@ -26,6 +26,13 @@ function renderHtml(t){
     t.innerHTML = t.innerText
 }
 
+function renderHtmlAll(){
+    let tag_comments = Array.from(document.querySelectorAll('.comment'))
+    tag_comments.forEach(e=>{
+        e.innerHTML = e.innerText
+    })
+}
+
 function edit_by_id(){
 
     let id = localStorage.id
@@ -121,5 +128,6 @@ window.deletedata = deletedata
 window.busca = busca
 window.changeselect = changeselect
 window.renderHtml = renderHtml
+window.renderHtmlAll = renderHtmlAll
 
 export {edit_page, edit_by_id, savedata, busca, changeselect, select_2}
