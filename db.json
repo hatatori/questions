@@ -1,0 +1,28 @@
+{
+  "questoes": [
+    {
+      "id": "2023-07-07T15:38:14.352Z",
+      "discipline": "Economia",
+      "subject": "Mercado Financeiro - Noções Gerais",
+      "question": "A equação da paridade dos juros, a descoberto, estabelece que: taxa de juros interna –\ntaxa de juros externa = expectativas de depreciação da moeda nacional em relação ao Dólar americano + risco-país\nAdmita-se que a deterioração de indicadores macroeconômicos fundamentais no Brasil, como o déficit fiscal e o déficit em transações correntes do balanço de pagamentos, provoque o aumento do risco-país e a fuga de capitais estrangeiros do Brasil.\nSe a equação de paridade dos juros for aplicada ao caso brasileiro, supondo-se que todos os demais indicadores econômicos permaneçam constantes, para que os influxos de capitais estrangeiros no Brasil voltem a se estabilizar, será necessário:",
+      "options": "aumentar o risco-país.\n\naumentar a taxa de juros externa.\n\naumentar a taxa de juros interna.*\n\nreduzir a taxa de juros interna.\n\ndepreciar o Real brasileiro em relação ao Dólar americano.",
+      "comment": "Sempre que houver fuga de capitais estrangeiros, o Banco Central poderá aumentar a taxa básica de Juros, a famosa Selic, forçando uma atratividade maior dos países estrangeiros.\n\nO aumento da taxa de juros interna (Taxa SELIC) é uma das únicas maneiras de se atrair capital estrangeiro oriundo de investidores, acarretando em uma valorização e estabilização da moeda nacional."
+    },
+    {
+      "id": "2023-07-07T20:37:35.268Z",
+      "discipline": "Informática",
+      "subject": "programação, análise de dados, python",
+      "question": "Ao analisar um conjunto de dados com Python, um programador resolveu usar um dataframe Pandas de nome dp para guardá-los. \nEm um certo momento, ele resolveu que precisaria usar, apenas, quatro colunas de dados do dataframe: “pais“, “ano“, “renda per capita“ e “expectativa de vida“.\nQue fragmento de código Python 3 deve ser usado para selecionar, apenas, essas quatro colunas do dataframe dp?",
+      "options": "dp[“pais“,“ano“,“expectativa de vida“,“renda per capita“]\n\ndp[[“pais“,“ano“,“expectativa de vida“,“renda per capita“]]*\n\ndp(“pais“,“ano“,“expectativa de vida“,“renda per capita“) \n\ndp([“pais“,“ano“,“expectativa de vida“,“renda per capita“]) \n\ndp[dp[“pais“,“ano“,“expectativa de vida“,“renda per capita“]] ",
+      "comment": "dp[[\"coluna1\", \"coluna2\", \"coluna3\"]]"
+    },
+    {
+      "id": "2023-07-07T23:22:14.659Z",
+      "discipline": "Informática",
+      "subject": "banco de dados, sistemas de informações gerenciais",
+      "question": "Os sistemas de informações gerenciais são utilizados como mecanismos de busca da eficiência organizacional por meio da gestão de informações. \nAssinale a alternativa correspondente ao tipo de sistema que trabalha em nível estratégico da organização reunindo dados de toda empresa para favorecer aos gestores identificarem e ajustarem dados para tomada de decisão:\nAlternativas",
+      "options": "Sistema de Amplitude Organizacional - SAO\n\nSistema de Estratégia - SDE\n\nSistema de Controle Estratégico - SCE\n\nSistema Interno de Controle de Dados - SICD\n\nSistema de Apoio ao Executivo - SAE*",
+      "comment": "Sistemas de Suporte a Executivos (SAE)\n\nTambém conhecidos como sistemas de informações estratégicas, esses sistemas fornecem informações para os altos executivos, no nível estratégico das organizações. Eles visam fornecer subsídio à tomada de decisão nesse nível mais elevado nas empresas, lidando também com problemas menos rotineiros, para os quais não há respostas predefinidas."
+    }
+  ]
+}

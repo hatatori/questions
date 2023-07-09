@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
+    <script src="js/unpkg.com_vue@3.3.4_dist_vue.global.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="Vue.js" defer></script>
+    <script type="module" src="index.js" defer></script>
+    <!-- <script src="class/Select.js" defer></script> -->
+    <!-- <script src="class/Questions.js" defer></script> -->
+    <!-- <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
+    <script src="select.js" defer></script> -->
+
+
+</head>
+<body id="app">
+
+    <section class="justify-center md:w-2/3 w-full m-auto">
+        <section class="m-5 shadow p-8 rounded bg-white mb-10 gap-3 flex">
+            <select class="p-2 bg-gray-200" id="inp_select_choice1" onchange="changeselect()">
+                <option value="Disciplina">Disciplina</option>
+            </select>
+            <select class="p-2 bg-gray-200" id="inp_select_choice2">
+                <option value="Disciplina">Disciplina</option>
+            </select>
+            
+            <button class="rounded p-2 px-3 bg-blue-500 text-white" id="btn_filtrar" onclick="busca()">Filtrar</button>
+        </section>
+    </section>
+
+    <main class="">
+        <div class="justify-center md:w-2/3 w-full m-auto">
+            <section class="m-5 shadow p-8 rounded bg-white mb-10" v-for="(obj, index) in items.reverse()">
+                <div class="text-xs font-semibold text-gray-500">{{obj.discipline}} > {{obj.subject}}</div>
+                <div class="py-3 whitespace-break-spaces">{{obj.question}}</div>
+                <div class="grid">
+                    <label class="block py-2 hover:bg-gray-300 cursor-pointer" v-for="(e, index2) in obj.ar">
+                        <input class="mx-2 p-3 bg-red-300" type="radio" :name="obj.id" :value="index2" >{{e.replace(/\*$/g,"")}}
+                    </label>
+                </div>
+                <button class="text-[13px] font-mono mt-5 bg-green-600 w-min p-2 px-5 rounded text-white" onclick="questions.checkRadioAnswer(this)" :answer="obj.answer">Verificar</button>
+                <button class="ml-3 text-[13px] font-mono bg-gray-600 w-min p-2 px-5 rounded text-white" onclick="this.parentElement.querySelector('.window').classList.toggle('window-closed')">Comentário</button>                
+                <div class="correct hidden" checkanswer id="btn_editar">Acertou</div>
+                <div class="window window-closed" id="win">
+                    <div class="bg-gray-200">{{obj.comment}}</div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+
+
+</html>
+

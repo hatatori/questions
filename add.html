@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- vue -->
+    <script defer src="./js/unpkg.com_vue@3.3.4_dist_vue.global.js"></script>
+    
+    <!-- tailwind -->
+    <script src="./js/tailwind.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- scripts -->
+    <script src="Vue.js" defer></script>
+    <script type="module" src="./add.js" defer></script>
+
+    <!-- <script src="class/Vue.js"></script> -->
+    <!-- <script src="class/Api.js"></script> -->
+    <!-- <script src="class/Questions.js"></script> -->
+    <!-- <script defer src="select.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="script2.js"></script> -->
+
+</head>
+
+<body>
+    <section id="app">
+
+        <main class="flex gap-3">
+            
+            <section class="flex flex-col gap-3 p-3 h-screen sticky top-0" style="flex:1">
+
+                <select class="p-2 rounded" id="inp_discipline0"></select>
+
+
+                <input id="inp_discipline" class="shadow-xl p-2 rounded" placeholder="discipline">
+                <input id="inp_subject" class="shadow-xl p-2 rounded" placeholder="subject">
+                <textarea id="inp_question" class="shadow-xl p-2 rounded flex-1" placeholder="question"></textarea>
+                <textarea id="inp_comment" class="shadow-xl p-2 rounded" placeholder="comment" rows="3"></textarea>
+                
+
+                <button id="btn_edit" onclick="edit_by_id()" class="hidden bg-yellow-600 w-min p-3 py-2 rounded text-white">Editar</button>
+
+                <button id="btn_add" onclick="savedata()" class="bg-blue-600 w-min p-3 py-2 rounded text-white">Adicionar</button>
+
+            </section>
+
+            <!-- <div class="flex-1 overflow-y-scroll" id="tag_list"></div> -->
+            <div class="flex-1" style="flex:2">
+                <section class="m-5 shadow p-8 rounded bg-white mb-10" v-for="(obj, index) in items.reverse()">
+                    
+                    <section class="flex gap-3 justify-between">
+                        <div onclick="edit_page(this)" :btid="obj.id" class="mb-5 cursor-pointer uppercase text-white bg-blue-500 p-1 text-sm rounded p-2 font-semibold flex items-center gap-3 justify-center">Editar <img class="text-red-300" src='imgs/edit.svg'></div>
+                        <div onclick="deletedata(this)" :btid="obj.id" class="mb-5 cursor-pointer uppercase p-1 text-sm rounded px-2 font-semibold text-white bg-blue-500 flex items-center gap-3 justify-center">Apagar <img class="text-red-300" src='imgs/delete.svg'></div>
+                    </section>
+
+                    <div class="text-xs font-semibold text-gray-500">{{obj.discipline}} > {{obj.subject}}</div>
+                    <div class="py-3 whitespace-break-spaces">{{obj.question}}</div>
+                    <div class="grid">
+                        <label class="block py-2 hover:bg-gray-300 cursor-pointer" v-for="(e, index2) in obj.ar">
+                            <input class="mx-2 p-3 bg-red-300" type="radio" :name="obj.id" :value="index2" >{{e.replace(/\*$/g,"")}}
+                        </label>
+                    </div>
+                    <button class="text-[13px] font-mono mt-5 bg-green-600 w-min p-2 px-5 rounded text-white" onclick="questions.checkRadioAnswer(this)" :answer="obj.answer">Verificar</button>
+                    <button class="ml-3 text-[13px] font-mono bg-gray-600 w-min p-2 px-5 rounded text-white" onclick="this.parentElement.querySelector('.window').classList.toggle('window-closed')">Comentário</button>                
+                    <div class="correct hidden" checkanswer id="btn_editar">Acertou</div>
+                    
+                    <div class="window window-closed" id="win">
+                        <div class="bg-gray-200">{{obj.comment}}</div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </section>
+</body>
+</html>
+
