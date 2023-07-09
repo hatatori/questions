@@ -41,7 +41,7 @@ class Questions{
         .then(list=>{
 
             if(this.querystring().discipline)
-                list = list.filter( e=> word.removeAcento(e.discipline).includes(word.removeAcento(this.querystring().discipline)) )
+                list = list.filter( e=> word.removeAcento(e.discipline).includes(word.removeAcento(this.querystring().discipline.replace(/\+/g," "))) )
 
             if(this.querystring().subject)
                 list = list.filter( e=> word.removeAcento(e.subject).includes(word.removeAcento(this.querystring().subject.replace(/\+/g," "))) )

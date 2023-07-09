@@ -113,8 +113,15 @@ function busca(){
 }
 
 function select_2(string){
-    let ar = ["Tudo", ...questions.disciplines[string]]
-    select.options(inp_select_choice2, ar)
+    try{
+        let ar = ["Tudo", ...questions.disciplines[string]]
+        // let ar = ['Mercado Financeiro - Noções Gerais', 'Mercado Financeiro - Noções Gerais', 'Mercado Financeiro - Noções Gerais', 'Mercado Financeiro - Noções Gerais']
+        ar = Array.from(new Set(ar))
+
+        console.log(questions.disciplines[string])
+        
+        select.options(inp_select_choice2, ar)
+    }catch(e){}
 }
 
 function changeselect(){
