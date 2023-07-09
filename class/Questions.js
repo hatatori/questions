@@ -54,7 +54,10 @@ class Questions{
             })
 
             this.render(this.dataAll)
-
+            
+            setTimeout(()=>{
+                renderHtmlAll()
+            },200)
             
 
             return list
