@@ -66,7 +66,7 @@
                         </label>
                     </div>
                     <button class="text-[13px] font-mono mt-5 bg-green-600 w-min p-2 px-5 rounded text-white" onclick="questions.checkRadioAnswer(this)" :answer="obj.answer">Verificar</button>
-                    <button class="ml-3 text-[13px] font-mono bg-gray-600 w-min p-2 px-5 rounded text-white" onclick="this.parentElement.querySelector('.window').classList.toggle('window-closed'); renderHtml(this.parentElement.querySelector('.comment'))">Comentário</button>
+                    <button class="ml-3 text-[13px] font-mono bg-gray-600 w-min p-2 px-5 rounded text-white" onclick="this.parentElement.querySelector('.window').classList.toggle('window-closed');">Comentário</button>
                     <div class="correct hidden" checkanswer id="btn_editar">Acertou</div>
                     
                     <div class="window window-closed" id="win">

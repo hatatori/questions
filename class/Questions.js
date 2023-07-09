@@ -103,7 +103,7 @@ class Questions{
 
             setTimeout(()=>{
                 renderHtmlAll()
-            },100)
+            },200)
 
             return list
 

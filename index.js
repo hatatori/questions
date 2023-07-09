@@ -20,5 +20,5 @@ questions.all_disciplines_subjects().then(list=>{
 // inp_select_choice2.value = questions.querystring().subject.replace(/\+/g," ")
 
 
-let c = Array.from(document.querySelectorAll('.comments '))
-c.forEach(e=>{ e.innerHTML = e.innerText })
+// let c = Array.from(document.querySelectorAll('.comments '))
+// c.forEach(e=>{ e.innerHTML = e.innerText })
