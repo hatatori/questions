@@ -11,7 +11,6 @@ questions.all_disciplines_subjects().then(list=>{
     select.options(inp_select_choice1, ['Tudo', ...Object.keys(list)])
     select.options(inp_select_choice2, ['Tudo', ...Object.values(list).flat()])
     
-    
     inp_select_choice1.selectedIndex = localStorage.s1
     select_2(inp_select_choice1.value)
     inp_select_choice2.selectedIndex = localStorage.s2

@@ -23,6 +23,14 @@
       "question": "Os sistemas de informações gerenciais são utilizados como mecanismos de busca da eficiência organizacional por meio da gestão de informações. \nAssinale a alternativa correspondente ao tipo de sistema que trabalha em nível estratégico da organização reunindo dados de toda empresa para favorecer aos gestores identificarem e ajustarem dados para tomada de decisão:\nAlternativas",
       "options": "Sistema de Amplitude Organizacional - SAO\n\nSistema de Estratégia - SDE\n\nSistema de Controle Estratégico - SCE\n\nSistema Interno de Controle de Dados - SICD\n\nSistema de Apoio ao Executivo - SAE*",
       "comment": "Sistemas de Suporte a Executivos (SAE)\n\nTambém conhecidos como sistemas de informações estratégicas, esses sistemas fornecem informações para os altos executivos, no nível estratégico das organizações. Eles visam fornecer subsídio à tomada de decisão nesse nível mais elevado nas empresas, lidando também com problemas menos rotineiros, para os quais não há respostas predefinidas."
+    },
+    {
+      "id": "2023-07-09T02:16:02.122Z",
+      "discipline": "Matemática",
+      "subject": "estatística, média",
+      "question": "Um concurso consiste de três provas de pesos diferentes, que são: matemática (peso 1), legislação (peso 3) e português (peso 4). Cada uma das três provas vale de 0 a 10 pontos, e a nota final de cada candidato é a média ponderada das três provas.\nRafaela prestou esse concurso, tirou 6 na prova de português e na de matemática tirou o dobro da nota que tirou na prova de legislação. Sabendo-se que Rafaela foi aprovada nesse concurso com média ponderada igual a 5, sua nota na prova de matemática superou a nota na prova de português em",
+      "options": "0,5 ponto.\n\n0,4 ponto.*\n\n0,2 ponto.\n\n0,6 ponto.\n\n0,8 ponto.",
+      "comment": "Nota = (matemática x 1 + legislação x 3 + português x 4) / 8\n\n5 = (2 x legislação x 1 + legislação x 3 + 6 x 4) / 8\n\n40 = 5 x legislação + 24\n\n5 x legislação = 16\n\nlegislação = 3,2\n\nmatemática = 2 x legislação = 2 x 3,2 = 6,4\n\nLogo, a nota de matemática (6,4) superou a nota de português (6) em 0,4 ponto."
     }
   ]
 }
