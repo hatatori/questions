@@ -39,6 +39,30 @@
       "question": "Os tipos de VPN são diferenciados pelos vários protocolos de tunelamento comumente utilizados, como",
       "options": "OpenVPN e IGMP\n\nIKEv2 e DCCP com SSL\n\nSSH e OSPF\n\nSSTP e MGCP com TLS\n\nPPTP e L2TP com IPSec*",
       "comment": "VPN (Virtual private network)\nSe utiliza da estrutura da rede pública para a comunicação entre rede privada.\n\nPrincipais protocolos VPN\nPPTP\nSSTP\nL2TP/IPSec\n\nPrincipais protocolos de segurança\n\n<b>PPTP</b> (Point-to-Point Tunneling Protocol) é um protocolo de túnel utilizado para estabelecer conexões VPN, mas é considerado menos seguro devido a vulnerabilidades conhecidas e falta de criptografia robusta.\n\n<b>SSTP</b> (Secure Socket Tunneling Protocol) é um protocolo de túnel VPN desenvolvido pela Microsoft que utiliza SSL/TLS para fornecer conexões VPN seguras, principalmente compatível com sistemas operacionais Windows.\n\n<b>SSL/TLS</b> (Secure Sockets Layer/Transport Layer Security): Fornecem criptografia e autenticação para comunicações seguras na Internet, geralmente usados para proteger transações online, como compras e acesso a páginas da web seguras (HTTPS).\n\n<b>L2TP/IPSec</b> (Layer 2 Tunneling Protocol/Internet Protocol Security) é um protocolo de túnel que combina a simplicidade do L2TP com a segurança do IPSec para fornecer conexões VPN seguras e confiáveis, com suporte em uma ampla gama de dispositivos e sistemas operacionais."
+    },
+    {
+      "id": "2023-07-09T19:08:52.925Z",
+      "discipline": "Tecnologia de informação",
+      "subject": "VPN",
+      "question": "O sistema de segurança responsável por estabelecer uma conexão segura e criptografada entre o dispositivo de um usuário remoto e um servidor em alguma rede específica e por prover autenticidade, confidencialidade e integridade às comunicações dessa conexão é",
+      "options": "firewall\n\nVPN*\n\nNAT (network address translation)\n\nantivírus.\n\nIDS (intrusion detection system). ",
+      "comment": "<b>Firewall</b> é um sistema de segurança que <u>monitora</u> e controla o <u>tráfego</u> de rede de <u>entrada</u> e <u>saída</u> com base em regras de segurança predefinidas.\n\n<b>VPN</b> (Virtual Private Network) é um sistema de segurança que permite a criação de uma <u>conexão segura</u> e <u>criptografada entre dispositivos</u> remotos e um servidor em uma rede específica, fornecendo autenticidade, confidencialidade e integridade às comunicações dessa conexão.\n\n<b>NAT</b> (Network Address Translation) é um método usado para <u>permitir</u> que <u>dispositivos</u> em uma <u>rede privada</u> tenham <u>acesso à Internet</u> usando um endereço <u>IP público compartilhado</u>.\n\n<b>Antivírus</b> é um programa de <u>software</u> projetado para <u>prevenir</u>, <u>detectar</u> e <u>remover</u> <u>software malicioso</u> (malware) de um dispositivo.\n\n<b>IDS</b> (Intrusion Detection System) é um sistema de segurança que <u>monitora</u> uma <u>rede</u> ou sistema para <u>detectar</u> atividades maliciosas ou <u>violações</u> de políticas e gera alertas quando tais atividades são detectadas."
+    },
+    {
+      "id": "2023-07-09T19:33:47.614Z",
+      "discipline": "Tecnologia de informação",
+      "subject": "Banco de dados",
+      "question": "Assinale a opção em que é apresentada a propriedade envolvida quando uma transação de banco de dados é completada com sucesso e as mudanças que ela fez no banco persistem, mesmo que existam falhas no sistema. ",
+      "options": "atomicidade \n\nconsistência\n\nisolamento \n\ndurabilidade*\n\ninconsistência de dados ",
+      "comment": "Propriedades ACID\n\nAtomicidade\nConsistência\nIsolamento\nDurabilidade\n\nAtomicidade: tudo ou nada\nConsistência: cumpre-se regras e restrições\nIsolamento: uma transação não interfere na outra\nDurabilidade: uma transação, após confirmada, deve ficar permanente no BD, independente de falhas no sistema"
+    },
+    {
+      "id": "2023-07-09T19:50:26.061Z",
+      "discipline": "Tecnologia de informação",
+      "subject": "Banco de dados",
+      "question": "Considerando os sistemas gerenciadores de bancos de dados, a maioria deles contém um módulo denominado otimizador, cuja função principal é",
+      "options": "implementar mecanismos de segurança dos dados contidos no banco de dados.\n\nrealizar a conexão mais eficiente com a rede de comunicação de dados. \n\nduplicar o conteúdo dos dados a serem utilizados em uma consulta.\n\ndeterminar a forma mais adequada para que os dados do banco de dados ocupem menos espaço de armazenamento permanente.\n\ndeterminar o(s) modo(s) mais eficiente(s) para que o sistema gerenciador execute a consulta solicitada pelo usuário*",
+      "comment": "otimizar = tornar mais eficiente"
     }
   ]
 }
